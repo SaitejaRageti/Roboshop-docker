@@ -12,8 +12,8 @@ services:
     depends_on: 
       - mongodb
   redis:
-    image: saitejarageti/redis:v1
-    container_name: redis
+    image: redis
+    container_name: redis:7.0
   user:
     image: saitejarageti/user:v1
     container_name: user
