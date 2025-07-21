@@ -9,10 +9,12 @@ services:
   catalogue:
     image: saitejarageti/catalogue:v1
     container_name: catalogue
-    depends_on: mongodb
+    depends_on: 
+      - mongodb
   redis:
     image: saitejarageti/redis:v1
-    container_name: redis
+    container_name: 
+      - redis
   user:
     image: saitejarageti/user:v1
     container_name: user
@@ -28,7 +30,7 @@ services:
   mysql:
     image: saitejarageti/mysql:v1
     container_name: mysql
-    
+
   shipping:
     image: saitejarageti/shipping:v1
     container_name: shipping
