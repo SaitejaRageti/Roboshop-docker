@@ -39,7 +39,7 @@ services:
     image: saitejarageti/mysql:v1
     container_name: mysql
     volumes:
-      - mongodb:/var/lib/mysql
+      - mysql:/var/lib/mysql
 
   shipping:
     image: saitejarageti/shipping:v1
