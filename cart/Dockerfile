@@ -11,7 +11,7 @@ ENV REDIS_HOST="redis" \
      CATALOGUE_PORT=8080
 WORKDIR /opt/server
 USER roboshop
-COPY -from=builder /opt/server /opt/server
+COPY --from=builder /opt/server /opt/server
 CMD ["node","server.js"]
 
 
